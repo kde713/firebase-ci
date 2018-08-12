@@ -1,7 +1,6 @@
 # Dependency directory
 node_modules
 coverage
-lib
 _book
 # Logs
 *.log
