@@ -23,21 +23,8 @@ function tryTemplating(str, name) {
 }
 
 /**
- * Create config file based on CI environment variables
- * @param {Object} settings - Settings for how environment variables should
- * be copied from Travis-CI to Firebase Functions Config
- * @param {String} settings.path - Path where config file should be written
- * @return {Promise} Resolves with undefined (result of functions config set)
- * @example
- * "ci": {
- *   "createConfig": {
- *     "prod": {
- *        "firebase": {
- *          "apiKey": "${PROD_FIREBASE_API_KEY}"
- *        }
- *     }
- *   }
- * }
+ * Create a config file based on CI environment variables
+ * @param {Object} config - Config Object
  * @private
  */
 export default function createConfigFile(config) {

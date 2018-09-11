@@ -17,8 +17,7 @@ import { to } from '../utils/async'
 const skipPrefix = 'Skipping Firebase Deploy'
 
 /**
- * Run firebase-ci actions
- * @param  {String} project - name of project
+ * Run firebase-ci actions=
  * @return {Promise}
  * @private
  */
@@ -43,7 +42,6 @@ export function runActions() {
  * @param {Object} opts - Options object
  * @param {String} opts.only - String corresponding to list of entities
  * to deploy (hosting, functions, database)
- * @param {Function} cb - Callback called when complete (err, stdout)
  */
 export default async function deploy(opts) {
   const settings = getFile('.firebaserc')

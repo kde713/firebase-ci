@@ -8,9 +8,8 @@ function createPath(filePath) {
 }
 
 /**
- * Copy version from main package file into functions package file
- * @param  {String} opts - name of project
- * @param  {Boolean} opts.silent - Whether or not to warn
+ * Copy version from package.json to functions/package.json
+ * @param  {Object} config - Config Object
  */
 export default function copyVersion(config = { silence: false }) {
   if (!functionsExists()) {
